@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'HarmonyOS Sans SC';
+    src: "HarmonyOS_Sans_SC_Regular.ttf";
+}
+
+:root {
+    --md-text-font: "HarmonyOS Sans SC"; 
+}

@@ -1,0 +1,57 @@
+site_name: KFC Manual
+site_url: https://kfc.arkitosekai.net
+theme:
+  name: material
+  # custom_dir: overrides
+  language: zh
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: purple
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: purple
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.instant.progress
+    - navigation.sections
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+extra:
+  social:
+    - icon: simple/notion 
+      link: https://secrets.arkitosekai.net
+
+nav:
+  - Home: 'index.md'
+  - HDD: 
+    - 部署: 'hdd/install.md'
+    - 优化运行性能: 'hdd/optimize.md'
+    - 杂项:
+      - 额外的启动选项: 'hdd/extras/troubleshoot.md'
+      - Discord RPC与自定义: 'hdd/extras/discord-rpc.md'
+      - 店内联机: 'hdd/extras/linkparty.md'
+      - 耳机孔配置: 'hdd/extras/enable-headphone-jack.md'
+  - 家用版: 
+    - 部署: 'konasute/setup.md'
