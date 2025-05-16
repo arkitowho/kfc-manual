@@ -34,7 +34,7 @@
 
     **Spice2x** 2024-12-06的一次更新，内置的LayeredFS被移除了，现在均需要自行安装，请从[mon/ifs_layeredfs](https://github.com/mon/ifs_layeredfs/releases)下载，或者用我预下载的
 
-    <a href="../../../assets/ifs_layeredfs_3.6.zip" target="_blank" download>ifs_layeredfs_3.6.zip</a>
+    [ifs_layeredfs_3.6.zip](../../public/ifs_layeredfs_3.6.zip)
 
     打开压缩包，将`data_mods`放到游戏目录，跟`data`同级
 
