@@ -86,7 +86,7 @@
 
         ![img](../img/optimize/right-menu.png)
 
-        在`管理3D设置`菜单中，将全局设定中垂直同步的选项改成`使用3D应用程序的设置`，如果有的情况下请禁用掉你显示器的G-SYNC，FreeSync等功能
+        在`管理3D设置`菜单中，将全局设定中垂直同步的选项改成`使用3D应用程序设置`，如果有的情况下请禁用掉你显示器的G-SYNC，FreeSync等功能
 
         !!! warning 
 
@@ -98,6 +98,6 @@
 
         ![img](../img/optimize/add-program.png)
 
-        将电源管理模式改成`最高性能优先`，垂直同步为`使用3D应用程序的设置`
+        将电源管理模式改成`最高性能优先`，垂直同步为`使用3D应用程序设置`
 
         ![img](../img/optimize/spice-nvidia-setting.png)

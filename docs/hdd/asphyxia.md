@@ -74,7 +74,7 @@ Asphyxia，又称氧无，是最流行的BEMANI系街机使用的本地EA服务�
 
 !!! info ""
 
-    `http://绑定域名:端口号`就是Spice里需要填的`EA Service URL`
+    此处需要按照`http://绑定域名:端口号`的格式填到Spice里的`EA Service URL`
 
     ![img](../img/asphyxia/ea-url.png)
 
