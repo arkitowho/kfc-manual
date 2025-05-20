@@ -2,7 +2,7 @@ site_name: KFC Manual
 site_url: https://kfc.arkitosekai.net
 theme:
   name: material
-  # custom_dir: overrides
+  custom_dir: overrides
   language: zh
   palette:
 
@@ -49,10 +49,11 @@ nav:
   - Home: 'index.md'
   - HDD: 
     - 部署: 'hdd/setup.md'
-    - 配置Asphyxia: 'hdd/asphyxia.md'
+    - Asphyxia配置: 'hdd/asphyxia.md'
     - 优化运行性能: 'hdd/optimize.md'
     - 杂项:
       - 常见问题: 'hdd/extras/troubleshoot.md'
+      - 进阶Asphyxia配置: 'hdd/extras/advanced-asphyxia.md'
       - Discord RPC与自定义: 'hdd/extras/discord-rpc.md'
       - 店内联机: 'hdd/extras/linkparty.md'
       - 耳机孔配置: 'hdd/extras/enable-headphone-jack.md'

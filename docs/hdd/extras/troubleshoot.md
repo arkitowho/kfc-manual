@@ -1,5 +1,19 @@
 # 常见问题
 
+## 我只能玩NORMAL，FRIEND，SKILL ANYLIZE
+
+!!! info ""
+
+    - 请检查你没有开启FREE PLAY
+    - 请检查氧无开启了PASELI
+    - 新号需要完整打一把才能解锁
+
+## 玩不了PREMIUM TIME
+
+!!! info ""
+
+    同上
+
 ## 掉帧/卡顿/帧数异常不稳定
 
 !!! info ""

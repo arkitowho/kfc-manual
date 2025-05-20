@@ -6,6 +6,8 @@
 
     - 进行部署前请确保你的文件来源纯净，因为下载到脏文件导致的各种问题，以及携带病毒请自行解决
 
+----
+
 ## 检查文件结构
 
 !!! info ""
@@ -34,6 +36,8 @@
 
     你可以选择保留，或者删除并在初次启动时重新矫正旋钮
 
+----
+
 ## 安装Spice2x
 
 !!! info ""
@@ -57,6 +61,8 @@
     你还需要将spice压缩包里的`stubs/64`里的三个dll文件复制到游戏目录的`modules`文件夹里，其余的文件是没必要的
 
     ![img](../img/install/stubs-installed.png)
+
+----
 
 ## 设置Spice2X
 
@@ -115,9 +121,11 @@
 
     - https://cdn.jsdelivr.net/gh/two-torial/sp2xpatcher/patches/
 
-    优先使用第一个，如果你所在的中国大陆地区屏蔽Github将无法访问第一个，请使用第二个
+    优先使用第一个，如果报错无法访问第一个，请使用第二个
 
     Overwrite game files表示将补丁硬编码至文件（不建议）
+
+    记得勾上Auto apply patches on game start来应用补丁
 
     ![img](../img/install/patcher.png)
 
@@ -145,4 +153,140 @@
     | `Force BIO2（KFC）IO in Valkyrie mode` | 强制Valkyrie使用Nemsys的IO | Off，如果使用框体则自行考虑 |
     | `Force Enable Headphones` | 强制启用耳机孔检测 | 都可 |
 
+### Options
 
+!!! info ""
+
+    需要设定
+    
+    | 功能 | 说明 | 推荐值 |
+    | --- | --- | --- |
+    | `SDVX Disable Cameras` | 禁用摄像头 | On |
+    | `EA Service URL` | EA服务器URL | 见下文[连接服务器](#_3) |
+    | `NVIDIA profile optimization` | NVIDIA优化配置 | On，**_AMD/Intel显卡除外_** |
+
+----
+
+## 连接服务器
+
+!!! info ""
+
+    二选一
+
+??? info "连接在线服务器（MaoMaNi）"
+
+    猫网，免邀请制的公共SDVX，IIDX服务器，获得Service URL即可连接，无需PCBID
+
+    猫网SDVX群：1035700815
+
+    ----
+
+    在Spice的Options选项卡，EA Service URL里填入 `http://maomani.cn:573`
+
+    PCBID留空或者自己生成一个
+
+    ![img](../img/install/maomani-setting.png)
+
+??? info "连接本地服务器（Asphyxia）"
+
+    [见此页](asphyxia.md)
+
+----
+
+## 首次启动游戏
+
+!!! info ""
+
+    双击`spice64.exe`启动游戏
+
+    如果你使用本地服务器，需要在启动前先启动氧无，在氧无的文件夹里双击`asphyxia-core-x64.exe`，否则会报错
+
+### 校准旋钮
+
+!!! info ""
+
+    首次启动游戏通常会要求你校准旋钮，如果你见到这个页面，请按下TEST（你上面绑定的）进入测试模式
+
+    - `BT-A`向上移动
+    - `BT-B`向下移动
+    - `Start`确认
+
+    ![img](../img/install/calibration.png)
+
+    进入`I/O CHECK`，选择`CALIBRATION SETTINGS`
+
+    ![img](../img/install/calibration-test.png)
+
+    ![img](../img/install/calibration-test2.png)
+    
+    1. 将左旋钮逆时针旋转3圈以上直到显示`COUNT=OK`，按下Start
+
+    2. 将左旋钮顺时针旋转3圈以上直到显示`COUNT=OK`，按下Start
+
+    3. 将右旋钮逆时针旋转3圈以上直到显示`COUNT=OK`，按下Start
+
+    4. 将右旋钮顺时针旋转3圈以上直到显示`COUNT=OK`，按下Start
+
+    ![img](../img/install/calibration-test3.png)
+
+    移动到`SAVE AND EXIT`，确认，完成校准
+
+### 投币设定
+
+!!! info ""
+
+    不设定投币TEST会一直显示`500円を超える価格設定があります（设定价格总计超过500日元）`，解决方法也很简单
+
+    你只需要进入`COIN OPTIONS`
+
+    ![img](../img/install/coin-options.png)
+
+    选择`FACTORY SETTINGS`，确认，`SAVE AND EXIT`退出即可
+
+    ![img](../img/install/coin-options-2.png)
+
+!!! warning 
+
+    请勿开启`FREE PLAY`，会导致Premium Time以及一些模式被锁定
+
+### 退出测试模式
+
+!!! info ""
+
+    ![img](../img/install/exit-test.png)
+
+    选择GAME MODE即可
+
+----
+
+## 读卡
+
+!!! info ""
+
+    在主菜单按小键盘的`+`号键进行读卡操作，默认读取Player 1的设定卡号
+
+    如果你没有小键盘请在[Buttons](#buttons)里重新绑定`P1 Keypad Insert Card`
+
+----
+
+## 退出游戏
+
+!!! info ""
+
+    三种方式
+
+    - 按`ESC`，选择`Exit Game`
+    
+    ![img](../img/install/exit-esc.png)
+
+    - 按`F4`，在Spice顶栏找到`Power`，选择`Exit Game`
+
+    ![img](../img/install/exit-power.png)
+
+    - Alt + F4
+
+----
+
+## 疑难杂症
+
+!!! tip "前往[常见问题](extras/troubleshoot.md)查看"
