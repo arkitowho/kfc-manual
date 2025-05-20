@@ -1,29 +1,28 @@
 # 店内联机（局域网）
 
-在进行联机前需要检查双方HDD以下内容
+!!! warning
 
-- `modules/soundvoltex.dll` 一致
-    - 可以打开cfg在Paches里的KFC一栏旁边的问号查看dll版本
-    - Patch不影响
-    - 懒人包可能把 `soundvoltex.dll` 放在了游戏根目录而不是在`modules`里，优先级要比放在`modules` 里高
-        - 如果使用懒人包但是用了更新包，需要覆盖完更新包以后将`modules` 文件夹里的`soundvoltex.dll` 挪到根目录，否则将还是老版本
-- `prop/ea3-config.xml` soft一栏的版本日期一致
+    在进行联机前需要检查双方HDD以下内容
 
-```xml
-    <soft>
-        <model __type="str">KFC</model>
-        <dest __type="str">J</dest>
-        <spec __type="str">G</spec>
-        <rev __type="str">A</rev>
-        <ext __type="str">2024072300</ext>
-    </soft>
-```
+    - `modules/soundvoltex.dll` 一致
+        - 可以打开cfg在Paches里的KFC一栏旁边的问号查看dll版本
+        - Patch不影响
+        - 懒人包可能把 `soundvoltex.dll` 放在了游戏根目录而不是在`modules`里，优先级要比放在    `modules` 里高
+            - 如果使用懒人包但是用了更新包，需要覆盖完更新包以后将`modules` 文件夹里的  `soundvoltex.dll` 挪到根目录，否则将还是老版本
+    - `prop/ea3-config.xml` soft一栏的版本日期一致
 
-双方以上任意一个不一致都会导致店内匹配找不到人
+    ```xml
+        <soft>
+            <model __type="str">KFC</model>
+            <dest __type="str">J</dest>
+            <spec __type="str">G</spec>
+            <rev __type="str">A</rev>
+            <ext __type="str">2024072300</ext>
+        </soft>
+    ```
 
-!!! tips
+    双方以上任意一个不一致都会导致店内匹配找不到人
 
-    局域网店内联机不需要两人在同一个ea服务器里，可以一个人用私服，一个用本地服
 
 ## 方法一：Radmin VPN
 

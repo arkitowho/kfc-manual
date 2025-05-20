@@ -1,6 +1,8 @@
 # Discord Rich Presence与自定义
 Discord用户最不陌生的就是Rich Presnece了，我恨不得让所有人每秒都知道我在什么，所以我相当喜欢这个功能。当然Spice也是内置了RPC的，可以直接使用，但是默认不区分游戏版本，以及自带图标比较丑，所以Spice也内置了RPC AppID Override， 你可以在Discord Devoloper Portal来创建
 
+----
+
 ## 启用Discord RPC
 
 !!! info ""

@@ -48,7 +48,7 @@ extra:
 nav:
   - Home: 'index.md'
   - HDD: 
-    - 部署: 'hdd/install.md'
+    - 部署: 'hdd/setup.md'
     - 配置Asphyxia: 'hdd/asphyxia.md'
     - 优化运行性能: 'hdd/optimize.md'
     - 杂项:
