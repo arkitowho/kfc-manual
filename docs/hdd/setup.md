@@ -164,6 +164,7 @@
     | `SDVX Disable Cameras` | 禁用摄像头 | On |
     | `EA Service URL` | EA服务器URL | 见下文[连接服务器](#_3) |
     | `NVIDIA profile optimization` | NVIDIA优化配置 | On，**_AMD/Intel显卡除外_** |
+    | `Low Latency Shared Audio` | 低延迟共享音频 | On，可降低使用DirectSound或者Shared WASAPI时的延迟 |
 
 ----
 
@@ -175,9 +176,11 @@
 
 ??? info "连接在线服务器（MaoMaNi）"
 
-    猫网，免邀请制的公共SDVX，IIDX服务器，获得Service URL即可连接，无需PCBID
+    猫网，用爱发电的免邀请制公共SDVX，IIDX服务器，获得Service URL即可连接，无需PCBID
 
-    猫网SDVX群：1035700815
+    - 猫网SDVX群：1035700815
+
+    - 猫网后台：https://maomani.cn
 
     ----
 
@@ -199,7 +202,7 @@
 
     双击`spice64.exe`启动游戏
 
-    如果你使用本地服务器，需要在启动前先启动氧无，在氧无的文件夹里双击`asphyxia-core-x64.exe`，否则会报错
+    如果你使用本地服务器，需要在启动前先启动氧无，在氧无的文件夹里双击`asphyxia-core-x64.exe`启动，否则后续游戏自建时会报错
 
 ### 校准旋钮
 
@@ -284,6 +287,41 @@
     ![img](../img/install/exit-power.png)
 
     - Alt + F4
+
+----
+
+## 一键启动脚本
+
+!!! info ""
+
+    每次启动游戏都需要手动运行Asphyxia和Spice，比较麻烦，可以写一个脚本一键调用，如果你按照我的教程配置好了，那么下面的批处理内容你可以照搬
+
+    将`.bat`文件放置到spice64.exe旁边，双击即可启动
+
+    这里可以[下载](../public/start.bat)下述的启动脚本
+
+```bat
+
+@echo off
+pushd %~dp0
+
+title Launch SOUND VOLTEX EXCEED GEAR 
+
+echo Booting Game....
+
+echo Launch Asphyxia...
+start /min ../asphyxia-core-win-x64/asphyxia-core-x64.exe
+
+echo Launch Game...
+start /wait spice64.exe -url localhost:8083
+
+echo Exit all task...
+taskkill /f /t /im asphyxia-core-x64.exe > nul 2>&1
+taskkill /f /t /im spice64.exe > nul 2>&1
+
+pause
+
+```
 
 ----
 
