@@ -196,6 +196,49 @@
 
 ----
 
+## 启动前准备
+
+### 旋转屏幕
+
+!!! info ""
+
+    将你的屏幕竖过来，并将系统改为竖向显示，左竖还是右竖根据你的情况来选择
+
+    - 桌面右键，显示设置
+
+    - 更改显示方向
+
+    ![img](../img/install/display-orientation.png)
+
+### 音频格式
+
+!!! info ""
+
+    检查你的音频输出是否有误，通常48000Hz 24bit或者44100Hz 16bit都是可以的，后者的兼容性最好，如果遇到问题可尝试后者
+
+    你需要
+    
+    - 右键任务栏小喇叭，打开`声音设置`
+    
+    - 选择你当前正在使用的音频设备
+    
+    - 检查设置
+
+    ![img](../img/install/audio-format.png)
+
+### 运行时
+
+!!! info ""
+
+    请安装Direct X以及Visual C++ Redist
+
+    - [Direct X](../public/DirectX.zip)
+        - [Direct X 修复工具](../public/DirectX_Repair.7z) （如果确认已经安装但启动时报错可以尝试这个）
+
+    - [Visual C++ Redist](../public/VisualCppRedist_AIO_x86_x64.exe)
+
+----
+
 ## 首次启动游戏
 
 !!! info ""
