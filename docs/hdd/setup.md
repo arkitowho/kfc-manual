@@ -15,7 +15,7 @@
     一个干净完整的文件结构应该如下
 
     ```
-    PATH: content
+    PATH: contents
     ├─data  # 游戏数据
     ├─ext   # 外部硬件数据，应该是打印机的
     ├─modules   # 游戏依赖与主进程
@@ -365,6 +365,17 @@ taskkill /f /t /im spice64.exe > nul 2>&1
 pause
 
 ```
+
+!!! warning "如果你没按我的配置来，路径不一样，请勿使用"
+
+!!! warning "如果你不使用本地服，删除下面这几行即可"
+
+    ```bat
+    echo Launch Asphyxia...
+    start /min ../asphyxia-core-win-x64/asphyxia-core-x64.exe
+    taskkill /f /t /im asphyxia-core-x64.exe > nul 2>&1
+
+    ```
 
 ----
 
