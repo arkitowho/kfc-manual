@@ -237,6 +237,27 @@
 
     - [Visual C++ Redist](../public/VisualCppRedist_AIO_x86_x64.exe)
 
+
+### 防止Windows Defender扫描
+
+!!! tips "如果你安装了Windows Defender以外的防护软件或者关闭了Defender，请无视本条"
+
+!!! info ""
+
+    Windows Defender会在运行时时扫描游戏的目录，导致游戏启动速度慢等各种问题
+
+    你可以通过开始菜单搜索“Windows 安全中心”
+
+    ![img](../img/install/windows-security.png)
+
+    进入“病毒和威胁防护”，“病毒和威胁防护设置”，“管理设置”
+
+    ![img](../img/install/windows-security-2.png)
+
+    添加或删除排除项，添加游戏所在整个文件夹即可
+
+    ![img](../img/install/windows-security-3.png)
+
 ----
 
 ## 首次启动游戏
