@@ -60,3 +60,4 @@ nav:
       - 耳机孔配置: 'hdd/extras/enable-headphone-jack.md'
   - 家用版: 
     - 部署: 'konasute/setup.md'
+    - 订阅游戏: 'konasute/subscription.md'
