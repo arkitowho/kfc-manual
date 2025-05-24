@@ -45,3 +45,11 @@
     ![image.png](../../img/troubleshoot/image%203.png)
 
     然后将压缩包64bit文件夹里的`ifs_hook.dll` 放到`modules`文件夹里，打开spicecfg，在Options-Inject Dll Hooks，填入`ifs_hook.dll`即可完成前置安装
+
+## 氧无回线冗杂
+
+!!! info ""
+
+    大概率是omnimix等歌曲类的Mod的合并有问题，请检查Mod完整性，重新覆盖或删除所有歌曲类的Mod
+    
+    也可尝试更新对应版本的最新氧无插件
