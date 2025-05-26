@@ -7,21 +7,27 @@
     - `modules/soundvoltex.dll` 一致
         - 可以打开cfg在Paches里的KFC一栏旁边的问号查看dll版本
         - Patch不影响
-        - 懒人包可能把 `soundvoltex.dll` 放在了游戏根目录而不是在`modules`里，优先级要比放在    `modules` 里高
-            - 如果使用懒人包但是用了更新包，需要覆盖完更新包以后将`modules` 文件夹里的  `soundvoltex.dll` 挪到根目录，否则将还是老版本
+        - 懒人包可能把 `soundvoltex.dll` 放在了游戏根目录而不是在 `modules` 里，优先级要比放在 `modules` 里高
+            - 如果使用懒人包但是用了更新包，需要覆盖完更新包以后将 `modules` 文件夹里的  `soundvoltex.dll` 挪到根目录，否则将还是老版本
     - `prop/ea3-config.xml` soft一栏的版本日期一致
 
-    ```xml
-        <soft>
-            <model __type="str">KFC</model>
-            <dest __type="str">J</dest>
-            <spec __type="str">G</spec>
-            <rev __type="str">A</rev>
-            <ext __type="str">2024072300</ext>
-        </soft>
-    ```
+        ```xml
+            <soft>
+                <model __type="str">KFC</model>
+                <dest __type="str">J</dest>
+                <spec __type="str">G</spec>
+                <rev __type="str">A</rev>
+                <ext __type="str">2025021200</ext>
+            </soft>
+        ```
 
-    双方以上任意一个不一致都会导致店内匹配找不到人
+    - 较新的版本还需要 `prop/bootstrap.xml` release_code一致
+
+        ```xml
+            <release_code>2025021200</release_code>
+        ```
+
+    如果不一致可能会导致店内匹配找不到人
 
 
 ## 方法一：Radmin VPN
