@@ -103,7 +103,7 @@ Asphyxia，又称氧无，是最流行的BEMANI系街机使用的本地EA服务�
     -  `Unlock All Navigators` | 领航员全解
     -  `Unlock All Appeal Cards` | Appeal Cards全解 
 
-!!! tips "如需进阶配置请查看[进阶Asphyxia配置](extras/advanced-asphyxia.md)"
+!!! tips "如需进阶配置请查看[进阶Asphyxia配置](advanced/advanced-asphyxia.md)"
 
 
 

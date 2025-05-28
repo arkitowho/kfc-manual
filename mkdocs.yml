@@ -53,8 +53,9 @@ nav:
     - 优化运行性能: 'hdd/optimize.md'
     - 更新: 'hdd/update.md'
     - 进阶配置:
-      - 进阶Asphyxia配置: 'hdd/extras/advanced-asphyxia.md'
-      - 安装Mod/omnimix: 'hdd/extras/layeredfs.md'
+      - 进阶Asphyxia配置: 'hdd/advanced/advanced-asphyxia.md'
+      - 安装Mod/omnimix: 'hdd/advanced/layeredfs.md'
+      - 降低音频延迟: 'hdd/advanced/audio-api.md'
     - 杂项:
       - 常见问题: 'hdd/extras/troubleshoot.md'
       - Discord RPC与自定义: 'hdd/extras/discord-rpc.md'

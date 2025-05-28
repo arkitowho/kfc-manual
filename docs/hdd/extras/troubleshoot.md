@@ -1,5 +1,14 @@
 # 常见问题
 
+## 游戏无法启动
+
+### `exception raised: EXCEPTION_ACCESS_VIOLATION`
+
+!!! info ""
+
+    - 请检查音频设置是否正确，[见此](../setup.md#_6)
+    - 请检查游戏文件是否完整，是否损坏
+
 ## 我只能玩NORMAL，FRIEND，SKILL ANYLIZE
 
 !!! info ""
