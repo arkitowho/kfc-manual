@@ -2,8 +2,6 @@
 hide:
   - navigation
 ---
-# 肯德基手册
-
 !!! info 
 
     Work in progress...
