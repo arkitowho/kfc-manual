@@ -8,8 +8,6 @@
 
     ![image.png](../img/update/update-zip.png)
 
-----
-
 ## 如何更新
 
 !!! info ""
@@ -28,8 +26,6 @@
 
     ![image.png](../img/update/lazypack-update.png)
 
-----
-
 ## 更改版本号
 
 !!! info ""
@@ -46,8 +42,6 @@
     </soft>
 
     ```
-
-----
 
 ## 重新应用Patch
 

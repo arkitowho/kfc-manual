@@ -13,8 +13,6 @@ HDD会优先读取ASIO设备，如果无法获取或获取失败将转换为WASA
 
 通常推荐值为 `Exclusive WASAPI ≈ ASIO > Shared WASAPI`
 
-----
-
 ## DirectSound
 
 !!! info ""
@@ -24,8 +22,6 @@ HDD会优先读取ASIO设备，如果无法获取或获取失败将转换为WASA
     兼容性非常好，也支持多音频流；但性能不佳，延迟比较高
     
     HDD上已经不再使用，家用版还可以通过设置选择，但不推荐使用，请优先选择WASAPI
-
-----
 
 ## WASAPI
 
@@ -73,8 +69,6 @@ HDD会优先读取ASIO设备，如果无法获取或获取失败将转换为WASA
     也可尝试关闭音频信号增强
 
     ![image.png](../../img/audio-api/sound-setting-2.png)
-
-----
 
 ## ASIO
 

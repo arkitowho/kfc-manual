@@ -1,10 +1,8 @@
-# 配置Asphyxia
-
 ![img](../img/asphyxia/logo.png)
 
-Asphyxia，又称氧无，是最流行的BEMANI系街机使用的本地EA服务器，你可以根据下面的说明配置/启用对应的功能至游戏
+# 配置Asphyxia
 
-----
+Asphyxia，又称氧无，是最流行的BEMANI系街机使用的本地EA服务器，你可以根据下面的说明配置/启用对应的功能至游戏
 
 ## 安装氧无
 
@@ -19,8 +17,6 @@ Asphyxia，又称氧无，是最流行的BEMANI系街机使用的本地EA服务�
     ![img](../img/asphyxia/asphyxia-folder-2.png)
 
     ![img](../img/asphyxia/asphyxia-folder.png)
-
-----
 
 ## 安装插件
 
@@ -49,8 +45,6 @@ Asphyxia，又称氧无，是最流行的BEMANI系街机使用的本地EA服务�
 
         ![img](../img/asphyxia/wrong-way.png)
 
-----
-
 ## 初始化氧无
 
 !!! info ""
@@ -58,8 +52,6 @@ Asphyxia，又称氧无，是最流行的BEMANI系街机使用的本地EA服务�
     完成后双击`asphyxia-core-x64.exe`启动，此时应该会自动弹出网页，这个就是氧无的后台WebUI，如果没有请**手动打开浏览器，访问`localhost:8083`**
 
     ![img](../img/asphyxia/webui.png)
-
-----
 
 ## 基础设定
 
@@ -85,8 +77,6 @@ Asphyxia，又称氧无，是最流行的BEMANI系街机使用的本地EA服务�
     此处需要按照`http://绑定域名:端口号`的格式填到Spice里的`EA Service URL`
 
     ![img](../img/asphyxia/ea-url.png)
-    
-----
 
 ## 全解
 

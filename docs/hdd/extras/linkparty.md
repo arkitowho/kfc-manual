@@ -75,10 +75,7 @@
 
     <img src='/img/SDVX-Linkparty/image%206.png'>
 
-!!! note
-    ✅ 到此完成店内联机的配置，启动游戏折磨好友吧
-
----
+!!! success "到此完成店内联机的配置，启动游戏折磨好友吧"
 
 ## 方法二：Zerotier
 
@@ -162,8 +159,6 @@
 
     ![image.png](../../img/SDVX-Linkparty/image%206.png)
 
-!!! note
-    ✅ 到此完成店内联机的配置
+!!! success "到此完成店内联机的配置，启动游戏折磨好友吧"
 
 > Reference article from: konamisb,Arr0w66  
-> 关键词：联机 店内联机 局域网

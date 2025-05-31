@@ -1,3 +1,4 @@
+/* 引入字体 */
 @font-face {
     font-family: 'HarmonyOS Sans SC';
     src: "HarmonyOS_Sans_SC_Regular.ttf";
@@ -5,4 +6,53 @@
 
 :root {
     --md-text-font: "HarmonyOS Sans SC"; 
+}
+
+/* 一级标题 */
+h1 {
+    text-align: left;
+    margin-block-end: 1em;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    inline-size: 100%;
+    block-size: 2px;
+    margin-block: 0.5em;
+    margin-inline: auto;
+    background: linear-gradient(90deg,
+            var(--md-primary-fg-color),
+            transparent);
+}
+
+/* 二级标题 */
+h2 {
+    font-weight: bold;
+    margin-block-start: 2em;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    inline-size: 100%;
+    block-size: 1px;
+    margin-block: 0.25em;
+    margin-inline: auto;
+    background: linear-gradient(90deg,
+            color-mix(in srgb, var(--md-typeset-color) 65%, white),
+            transparent);
+}
+
+/* 分割线样式 */
+hr {
+    inline-size: 60%;
+    block-size: 2px;
+    margin-block: 0.5em !important;
+    margin-inline: auto !important;
+    background: linear-gradient(90deg,
+            transparent,
+            var(--md-primary-fg-color),
+            transparent);
+    border: 0;
 }

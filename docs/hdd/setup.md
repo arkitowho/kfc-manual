@@ -6,8 +6,6 @@
 
     - 进行部署前请确保你的文件来源纯净，因为下载到脏文件导致的各种问题，以及携带病毒请自行解决
 
-----
-
 ## 检查文件结构
 
 !!! info ""
@@ -36,8 +34,6 @@
 
     你可以选择保留，或者删除并在初次启动时重新矫正旋钮
 
-----
-
 ## 安装Spice2x
 
 !!! info ""
@@ -61,8 +57,6 @@
     你还需要将spice压缩包里的`stubs/64`里的三个dll文件复制到游戏目录的`modules`文件夹里，其余的文件是没必要的
 
     ![img](../img/install/stubs-installed.png)
-
-----
 
 ## 设置Spice2X
 
@@ -166,8 +160,6 @@
     | `NVIDIA profile optimization` | NVIDIA优化配置 | On，**_AMD/Intel显卡除外_** |
     | `Low Latency Shared Audio` | 低延迟共享音频 | On，可降低使用DirectSound或者Shared WASAPI时的延迟 |
 
-----
-
 ## 连接服务器
 
 !!! info ""
@@ -193,8 +185,6 @@
 ??? info "连接本地服务器（Asphyxia）"
 
     [见此页](asphyxia.md)
-
-----
 
 ## 启动前准备
 
@@ -262,8 +252,6 @@
 
     ![img](../img/install/windows-security-3.png)
 
-----
-
 ## 首次启动游戏
 
 !!! info ""
@@ -312,7 +300,7 @@
 
     ![img](../img/install/coin-options.png)
 
-    选择`FACTORY SETTINGS`，确认，`SAVE AND EXIT`退出即可
+    选择`FACTORY SETTINGS`，`SAVE AND EXIT`退出即可
 
     ![img](../img/install/coin-options-2.png)
 
@@ -328,8 +316,6 @@
 
     选择GAME MODE即可
 
-----
-
 ## 读卡
 
 !!! info ""
@@ -337,8 +323,6 @@
     在主菜单按小键盘的`+`号键进行读卡操作，默认读取Player 1的设定卡号
 
     如果你没有小键盘请在[Buttons](#buttons)里重新绑定`P1 Keypad Insert Card`
-
-----
 
 ## 退出游戏
 
@@ -355,8 +339,6 @@
     ![img](../img/install/exit-power.png)
 
     - Alt + F4
-
-----
 
 ## 一键启动脚本
 
@@ -401,8 +383,6 @@ pause
     taskkill /f /t /im asphyxia-core-x64.exe > nul 2>&1
 
     ```
-
-----
 
 ## 疑难杂症
 
