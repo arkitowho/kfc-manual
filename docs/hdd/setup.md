@@ -216,7 +216,7 @@
 
         ![image.png](../img/audio-api/sound-setting.png)
     
-    - 在 `高级` 选项卡里，将默认格式改成 `44100Hz, 24bit` ，SDVX EG通常采用 `48000Hz, 24bit` 运行是没有问题的，还运行不起来可以再降低尝试 `44100Hz, 16bit` ，同时请勾上下方独占模式的两个勾，也可尝试关闭音频信号增强
+    - 在 `高级` 选项卡里，将默认格式改成 `44100Hz, 16bit` ，SDVX EG通常采用 `48000Hz, 24bit` `48000Hz, 16bit` 运行是没有问题的，但不排除一些兼容性问题，同时请勾上下方独占模式的两个勾，也可尝试关闭音频信号增强
 
         ![image.png](../img/audio-api/sound-setting-2.png)
 
