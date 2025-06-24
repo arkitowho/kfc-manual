@@ -37,6 +37,8 @@
     </kfc_game_s_blaster>
     ```
 
+    Thanks for 22vv0
+
 ## 游戏无法启动
 
 ### `exception raised: EXCEPTION_ACCESS_VIOLATION`
