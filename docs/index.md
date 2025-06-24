@@ -8,6 +8,12 @@ hide:
 
     Work in progress...
 
+!!! quote
+
+    本站致力于帮助各位玩家深入了解SDVX的一些设置
+    
+    部分内容参考并整合自Two-Torial，感谢项目组的辛勤付出！
+
 SOUND VOLTEX（SDVX，音律炫动，サウンド ボルテックス）是一款由573开发的BEMANI系列下落式街机节奏游戏
 
 最新版本为SOUND VOLTEX EXCEED GEAR，其旧版本分别为：

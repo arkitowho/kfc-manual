@@ -1,5 +1,42 @@
 # 常见问题
 
+## 无法游玩Standard Start/回线冗杂
+
+!!! info ""
+
+    2025042202版本新增了一个参数，更新包内未提供需要手动加一下，否则会导致Standard Start后无法保存数据，回线冗杂
+
+    你需要打开游戏`prop/ea3-config.xml`文件，找到`kfc_game_s_standard`树（大概480多行的位置，可以Ctrl+F打开搜索框），在他的下方再添加一串新参数
+    ```xml
+    <kfc_game_s_standard_plus>
+      <type __type="str">consume</type>
+      <event __type="str">KFC.game.s.standard_plus</event>
+      <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+      <credit_ref __type="str">/coin/event</credit_ref>
+    </kfc_game_s_standard_plus>
+    ```
+    最终如图
+    ```xml hl_lines="7-12"
+    <kfc_game_s_standard>
+      <type __type="str">consume</type>
+      <event __type="str">KFC.game.s.standard</event>
+      <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+      <credit_ref __type="str">/coin/event</credit_ref>
+    </kfc_game_s_standard>
+    <kfc_game_s_standard_plus>
+      <type __type="str">consume</type>
+      <event __type="str">KFC.game.s.standard_plus</event>
+      <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+      <credit_ref __type="str">/coin/event</credit_ref>
+    </kfc_game_s_standard_plus>
+    <kfc_game_s_blaster>
+      <type __type="str">consume</type>
+      <event __type="str">KFC.game.s.blaster</event>
+      <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+      <credit_ref __type="str">/coin/event</credit_ref>
+    </kfc_game_s_blaster>
+    ```
+
 ## 游戏无法启动
 
 ### `exception raised: EXCEPTION_ACCESS_VIOLATION`

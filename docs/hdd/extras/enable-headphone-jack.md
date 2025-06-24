@@ -17,28 +17,26 @@
 
     ![image.png](../../img/SDVX-Headphone-Jack-Enable/image%201.png)
 
-    !!! note
-        此时将仅有游戏可输出声音，其他软件无法捕获声卡
+!!! note
+
+    此时将仅有游戏可输出声音，其他软件无法捕获声卡
 
 ## 启用耳机孔
 
 !!! info ""
-
     耳机孔带有插入检测，默认是关闭的，有两种方法开启
 
-    ??? tips "方法一：补丁"
+??? tips "方法一：补丁"
 
-        ![image.png](../../img/SDVX-Headphone-Jack-Enable/image%202.png)
+    ![image.png](../../img/SDVX-Headphone-Jack-Enable/image%202.png)
 
-    ??? tips "方法二：插孔检测"
+??? tips "方法二：插孔检测"
+    在Buttons选项卡里，找到Headphone，Edit，点击`Invert`即可使游戏认为耳机口插着耳机
 
-        在Buttons选项卡里，找到Headphone，Edit，点击`Invert`即可使游戏认为耳机口插着耳机
+    ![image.png](../../img/SDVX-Headphone-Jack-Enable/image%203.png)
 
-        ![image.png](../../img/SDVX-Headphone-Jack-Enable/image%203.png)
-
-    !!! warning  
-
-        请不要将两者同时使用
+!!! warning  
+    请不要将两者同时使用
 
 ## 插入耳机
 
@@ -50,17 +48,17 @@
 
     ![image.png](../../img/SDVX-Headphone-Jack-Enable/image%204.png)
 
-    ??? tips "没有声音？"
+??? tips "没有声音？"
 
-        如果你的耳机插在机箱前面板上请插到后面板上，声卡在插入前面板的同时默认会屏蔽后面板的输出。
-        
-        如果你的声卡支持，以Realtek为例，你可以直接在控制面板里禁用前面板
+    如果你的耳机插在机箱前面板上请插到后面板上，声卡在插入前面板的同时默认会屏蔽后面板的输出。
+    
+    如果你的声卡支持，以Realtek为例，你可以直接在控制面板里禁用前面板
 
-        ![image.png](../../img/SDVX-Headphone-Jack-Enable/disable-front-jack.png)
+    ![image.png](../../img/SDVX-Headphone-Jack-Enable/disable-front-jack.png)
 
-        或者将前后面板的混流拆分，各自输出（推荐）
-
-        ![image.png](../../img/SDVX-Headphone-Jack-Enable/seperate-frontrear.png)
+    或者将前后面板的混流拆分，各自输出（推荐）
+    
+    ![image.png](../../img/SDVX-Headphone-Jack-Enable/seperate-frontrear.png)
 
 ## 调整音量
 
