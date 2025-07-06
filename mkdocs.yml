@@ -40,6 +40,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - tables
+  - pymdownx.tabbed:
+      alternate_style: true
 extra:
   social:
     - icon: simple/notion 
@@ -57,6 +59,7 @@ nav:
       - 安装Mod/omnimix: 'hdd/advanced/layeredfs.md'
       - 降低音频延迟: 'hdd/advanced/audio-api.md'
       - 触摸屏配置: 'hdd/advanced/touchscreen.md'
+      - 测试菜单: 'hdd/advanced/testmenu.md'
     - 杂项:
       - 常见问题: 'hdd/extras/troubleshoot.md'
       - Discord RPC与自定义: 'hdd/extras/discord-rpc.md'
