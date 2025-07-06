@@ -49,23 +49,35 @@
 
     ### Startup Flags
 
+    !!! warning "版本更新"
+
+        此处的列表不一定准确，插件更新后可能会增加/移除，请以最新版本为准
+
     此处是一些服务端下发给游戏的参数，根据需要更改，否则保持默认
 
     更改后请点击右下角的`Apply`应用
 
     | 功能 | 说明 |
     | --- | --- |
-    | `USE_CUDA_VIDEO_PRESENTER` | 启用CUDA渲染 | 
+    | `USE_CUDA_VIDEO_PRESENTER` | 启用CUDA视频渲染 | 
     | `HISCORE_DATA_LIMIT` | 最高成绩数据限制（？存疑） |
     | `Sub monitor V-Sync` | 启用副屏幕垂直同步 |
-    | `DEMOLOOP_INFORMATION` |  |
+    | `DEMOLOOP_INFORMATION` | 在待机屏幕显示新资讯 |
     | `Konami 50th Anniversary logo` | 启用开屏的KONAMI 50周年的LOGO |
-    | `Christmas login greeting` | 启用领航员的圣诞特殊问候 |
+    | `Christmas login greeting` | 启用领航员的圣诞节特殊问候 |
     | `Valentines Day login greeting` | 启用领航员的情人节特殊问候 | 
     | `White Day login greeting` | 启用领航员的白色情人节特殊问候 | 
     | `Halloween login greeting` | 启用领航员的万圣节特殊问候 | 
     | `V-RAN (april fools 2024)` | 启用2024年愚人节特效（在歌曲搜索栏输入"V-RAN"） | 
     | `ゆっくりしていってね！！！` | 启用2025年愚人节特效 | 
+
+    !!! info "说明"
+
+        - 领航员问候一次只能开一个
+
+        - 愚人节特效可以一起开但建议同时只开一个
+
+        - **启用副屏幕垂直同步可能会闪退**
 
 !!! info ""
 

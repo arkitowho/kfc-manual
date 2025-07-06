@@ -117,9 +117,9 @@
 
     优先使用第一个，如果报错无法访问第一个，请使用第二个
 
-    Overwrite game files表示将补丁硬编码至文件（不建议）
-
     记得勾上Auto apply patches on game start来应用补丁
+
+    Overwrite game files表示将补丁硬编码至文件（不建议）
 
     ![img](../img/install/patcher.png)
 
@@ -129,9 +129,9 @@
 
     | 功能 | 说明 | 推荐值 |
     | --- | --- | --- |
-    | `Game FPS Target` | 游戏目标帧率 | 推荐不启用，如果帧率不对则60FPS for 60Hz屏幕，120FPS for 120Hz以上屏幕 |
-    | `Note FPS Target` | 铺面目标帧率 | 同上 |
-    | `Shared mode WASAPI` | 共享式WASAPI | 建议保持关闭以保证最佳延迟，如果没有声音或需要游戏以外的声音请开启 |
+    | `Game FPS Target` | 游戏目标帧率 | 推荐不启用，如果帧率不稳定/对不上，可尝试开启 |
+    | `Note FPS Target` | 铺面目标帧率 | 同上，两者请同时开或关 |
+    | `Shared mode WASAPI` | 共享式WASAPI | 如果你的声卡兼容建议保持关闭以保证最佳延迟，如果没有声音或需要游戏以外的声音请开启 |
     | `Hide premium guide banner` |  | |
     | `Hide all bottom text` | 隐藏底栏的文字（PASELI，CREDIT） | 都可 |
     | `Standatd/Menu Timer Freeze` | 标准/菜单计时器冻结 | On |
@@ -216,7 +216,14 @@
 
         ![image.png](../img/audio-api/sound-setting.png)
     
-    - 在 `高级` 选项卡里，将默认格式改成 `44100Hz, 16bit` ，SDVX EG通常采用 `48000Hz, 24bit` `48000Hz, 16bit` 运行是没有问题的，但不排除一些兼容性问题，同时请勾上下方独占模式的两个勾，也可尝试关闭音频信号增强
+    - 在 `高级` 选项卡里，将默认格式改成 `48000Hz, 16bit`，同时请务必勾上下方独占模式的两个勾，也可尝试关闭音频信号增强
+    
+        - 以下是其他一些SDVX EG可运行的采样率，但考虑到一些兼容性问题，以下不一定准确
+            - `48000Hz, 24bit`
+            - `44100Hz, 16bit`
+            - `44100Hz, 24bit`
+        
+        - **请勿设置超过48000Hz的采样率！**
 
         ![image.png](../img/audio-api/sound-setting-2.png)
 

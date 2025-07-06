@@ -53,10 +53,6 @@ Asphyxia，又称氧无，是最流行的BEMANI系街机使用的本地EA服务�
 
     ![img](../img/asphyxia/webui.png)
 
-## 基础设定
-
-!!! info ""
-
     你可以在Dashbord页面配置氧无的基础设定
 
     ![img](../img/asphyxia/dashboard-settings.png)
@@ -66,15 +62,19 @@ Asphyxia，又称氧无，是最流行的BEMANI系街机使用的本地EA服务�
     | `Port` | 氧无所使用的端口 | 
     | `Bind` | 氧无所绑定的域名 |
     | `Ping IP` | 服务器连通性检测IP，如果失败则离线 |
-    | `Matching port` |  |
+    | `Matching port` | 全国对战匹配使用的端口（需插件支持） |
     | `Allow register` | 是否允许注册 |
-    | `Maintenance mode` | 是否启用服务器维护 |
-    | `Enable paseli` | 是否启用Paseli，关闭后无法选择NORMAL,FRIEND,SKILL ANALYZER以外的模式 | 
+    | `Maintenance mode` | 是否启用服务器维护模式 |
+    | `Enable paseli` | 是否启用Paseli（关闭后无法使用部分模式，例如Blaster、Premium Time） | 
     | `WebUI on startup` | 是否每次启动时都打开后台 |
+
+## 设置spicecfg
 
 !!! info ""
 
     此处需要按照`http://绑定域名:端口号`的格式填到Spice里的`EA Service URL`
+
+    默认情况下填写`http://localhost:8083`即可
 
     ![img](../img/asphyxia/ea-url.png)
 
@@ -92,6 +92,17 @@ Asphyxia，又称氧无，是最流行的BEMANI系街机使用的本地EA服务�
     -  `Unlock All Songs` | 歌曲全解
     -  `Unlock All Navigators` | 领航员全解
     -  `Unlock All Appeal Cards` | Appeal Cards全解 
+
+
+## 更新插件
+
+!!! info ""
+
+    如果你需要更新插件，请从[22vv0/asphyxia_plugins](https://github.com/22vv0/asphyxia_plugins/releases)下载最新版本的插件
+
+    回到插件目录，删除里面所有的文件并重新解压新插件里的内容并替换
+
+    ![img](../img/asphyxia/plugins.png)
 
 !!! tips "如需进阶配置请查看[进阶Asphyxia配置](advanced/advanced-asphyxia.md)"
 

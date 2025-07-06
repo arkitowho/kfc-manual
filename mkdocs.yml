@@ -56,6 +56,7 @@ nav:
       - 进阶Asphyxia配置: 'hdd/advanced/advanced-asphyxia.md'
       - 安装Mod/omnimix: 'hdd/advanced/layeredfs.md'
       - 降低音频延迟: 'hdd/advanced/audio-api.md'
+      - 触摸屏配置: 'hdd/advanced/touchscreen.md'
     - 杂项:
       - 常见问题: 'hdd/extras/troubleshoot.md'
       - Discord RPC与自定义: 'hdd/extras/discord-rpc.md'
