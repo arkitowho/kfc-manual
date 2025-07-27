@@ -4,6 +4,12 @@
 
 !!! info ""
 
+    太长不看版：直接下载这个文件（点开文件，右键另存为），然后覆盖掉 `prop` 文件夹里同名的 `ea3-config.xml` ，记得打开修改Datecode为自己对应的版本
+
+    [ea3-config.xml](../../public/ea3-config.xml)
+
+!!! info ""
+
     2025042202版本新增了一个参数，更新包内未提供需要手动加一下，否则会导致Standard Start后无法保存数据，回线冗杂
 
     你需要打开游戏`prop/ea3-config.xml`文件，找到`kfc_game_s_standard`树（大概480多行的位置，可以Ctrl+F打开搜索框），在他的下方再添加一串新参数
@@ -36,8 +42,6 @@
       <credit_ref __type="str">/coin/event</credit_ref>
     </kfc_game_s_blaster>
     ```
-
-    如果你使用在线服可能需要等服务端适配新参数或是其他什么的，否则也是回线冗杂
 
     Thanks to 22vv0
 

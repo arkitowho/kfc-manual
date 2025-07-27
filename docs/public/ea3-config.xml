@@ -1,0 +1,997 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ea3>
+  <id>
+    <pcbid __type="str">00010203040506070809</pcbid>
+    <hardid __type="str">00010203040506070809</hardid>
+  </id>
+  <soft>
+    <model __type="str">KFC</model>
+    <dest __type="str">J</dest>
+    <spec __type="str">G</spec>
+    <rev __type="str">A</rev>
+    <ext __type="str">2025042202</ext>
+  </soft>
+  <timezone __type="s32">32400</timezone>
+  <encoding __type="str">SHIFT_JIS</encoding>
+  <format __type="str">binary</format>
+  <network>
+    <services __type="str">https://eamuse.konami.fun/service/services/services/</services>
+    <services_localstrap __type="str">http://eamuse.konami.fun/service/services/services/</services_localstrap>
+    <sz_xrpc_buf __type="u32">102400</sz_xrpc_buf>
+    <ssl __type="bool">1</ssl>
+  </network>
+  <share>
+    <config_file __type="str">./prop/share-config.xml</config_file>
+  </share>
+  <option>
+    <service __type="u8">1</service>
+    <pcbevent __type="u8">1</pcbevent>
+    <apsmanager __type="u8">0</apsmanager>
+  </option>
+  <service>
+    <cardmng __type="u8">1</cardmng>
+    <package __type="u8">1</package>
+    <userdata __type="u8">1</userdata>
+    <userid __type="u8">0</userid>
+  </service>
+  <facility>
+    <sz_prop_buf __type="u32">4096</sz_prop_buf>
+  </facility>
+  <client>
+    <nr_clients __type="u32">1</nr_clients>
+    <nr_coinslot __type="u32">1</nr_coinslot>
+  </client>
+  <eacoin>
+    <enable __type="u8">1</enable>
+    <control_ref __type="str">/eacoin/enable</control_ref>
+    <nr_vslot __type="u32">1</nr_vslot>
+    <sz_opt_buf __type="u32">32768</sz_opt_buf>
+  </eacoin>
+  <pos>
+    <nr_coinslot __type="u32">1</nr_coinslot>
+    <pp_enable __type="bool">1</pp_enable>
+    <coin>
+      <freeplay_ref __type="str">/coin/freeplay</freeplay_ref>
+      <slot1>
+        <type __type="str">throw</type>
+        <src __type="str">coin</src>
+        <slot __type="u8">1</slot>
+        <event __type="str">coin.i</event>
+        <player_ref __type="str">/coin/slot1/player</player_ref>
+        <coin_credit_ref __type="str">/coin/slot1/coin_credit</coin_credit_ref>
+      </slot1>
+      <service>
+        <type __type="str">throw</type>
+        <src __type="str">service</src>
+        <event __type="str">service.p</event>
+        <coin_event __type="str">/coin/slot1</coin_event>
+      </service>
+      <p1s01a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/start</credit_ref>
+      </p1s01a1>
+      <p1s02a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.c</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/continue</credit_ref>
+      </p1s02a1>
+      <p1s03a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s.join</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/join</credit_ref>
+      </p1s03a1>
+      <p1s04a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s.free</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/startfree</credit_ref>
+      </p1s04a1>
+      <p1s05a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item1</credit_ref>
+      </p1s05a1>
+      <p1s06a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item2</credit_ref>
+      </p1s06a1>
+      <p1s07a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item3</credit_ref>
+      </p1s07a1>
+      <p1s08a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.04</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item4</credit_ref>
+      </p1s08a1>
+      <p1s09a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.05</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item5</credit_ref>
+      </p1s09a1>
+      <p1s10a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.06</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item6</credit_ref>
+      </p1s10a1>
+      <p1s11a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.07</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item7</credit_ref>
+      </p1s11a1>
+      <p1s12a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.08</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item8</credit_ref>
+      </p1s12a1>
+      <p1s13a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.09</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item9</credit_ref>
+      </p1s13a1>
+      <p1s14a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.10</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item10</credit_ref>
+      </p1s14a1>
+      <p1s15a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.11</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item11</credit_ref>
+      </p1s15a1>
+      <p1s16a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.12</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item12</credit_ref>
+      </p1s16a1>
+      <p1s17a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.13</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item13</credit_ref>
+      </p1s17a1>
+      <p1s18a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.14</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item14</credit_ref>
+      </p1s18a1>
+      <p1s19a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item15</credit_ref>
+      </p1s19a1>
+      <p1s20a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item16</credit_ref>
+      </p1s20a1>
+      <p1s21a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item17</credit_ref>
+      </p1s21a1>
+      <p1s22a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.18</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item18</credit_ref>
+      </p1s22a1>
+      <p1s23a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.19</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item19</credit_ref>
+      </p1s23a1>
+      <p1s24a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.20</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item20</credit_ref>
+      </p1s24a1>
+      <p1s25a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.21</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item21</credit_ref>
+      </p1s25a1>
+      <p1s26a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.22</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item22</credit_ref>
+      </p1s26a1>
+      <p1s27a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.23</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item23</credit_ref>
+      </p1s27a1>
+      <p1s28a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.24</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item24</credit_ref>
+      </p1s28a1>
+      <p1s29a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.25</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item25</credit_ref>
+      </p1s29a1>
+      <p1s30a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.26</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item26</credit_ref>
+      </p1s30a1>
+      <p1s31a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.27</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item27</credit_ref>
+      </p1s31a1>
+      <p1s32a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.28</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item28</credit_ref>
+      </p1s32a1>
+      <p1s33a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.29</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item29</credit_ref>
+      </p1s33a1>
+      <p1s34a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.30</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item30</credit_ref>
+      </p1s34a1>
+      <p1s35a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.31</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item31</credit_ref>
+      </p1s35a1>
+      <p1s36a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.32</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item32</credit_ref>
+      </p1s36a1>
+      <p1s37a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.33</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item33</credit_ref>
+      </p1s37a1>
+      <p1s38a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.34</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item34</credit_ref>
+      </p1s38a1>
+      <p1s39a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.35</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item35</credit_ref>
+      </p1s39a1>
+      <p1s40a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.36</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item36</credit_ref>
+      </p1s40a1>
+      <p1s41a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.37</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item37</credit_ref>
+      </p1s41a1>
+      <p1s42a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.38</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item38</credit_ref>
+      </p1s42a1>
+      <p1s43a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.39</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item39</credit_ref>
+      </p1s43a1>
+      <p1s44a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.40</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item40</credit_ref>
+      </p1s44a1>
+      <p1s45a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.41</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item41</credit_ref>
+      </p1s45a1>
+      <p1s46a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.42</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item42</credit_ref>
+      </p1s46a1>
+      <p1s47a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.43</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item43</credit_ref>
+      </p1s47a1>
+      <p1s48a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.44</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item44</credit_ref>
+      </p1s48a1>
+      <p1s49a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.45</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item45</credit_ref>
+      </p1s49a1>
+      <p1s50a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.46</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item46</credit_ref>
+      </p1s50a1>
+      <p1s51a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.47</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item47</credit_ref>
+      </p1s51a1>
+      <p1s52a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.48</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item48</credit_ref>
+      </p1s52a1>
+      <p1s53a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.49</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item49</credit_ref>
+      </p1s53a1>
+      <p1s54a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.50</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/item50</credit_ref>
+      </p1s54a1>
+      <end>
+        <type __type="str">consume</type>
+        <event __type="str">game.e</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </end>
+      <read>
+        <type __type="str">consume</type>
+        <event __type="str">pdata.r</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </read>
+      <write>
+        <type __type="str">consume</type>
+        <event __type="str">pdata.w</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </write>
+      <match>
+        <type __type="str">consume</type>
+        <event __type="str">match.m</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </match>
+      <mode_s_game>
+        <type __type="str">consume</type>
+        <event __type="str">mode.s.game</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </mode_s_game>
+      <mode_s_test>
+        <type __type="str">consume</type>
+        <event __type="str">mode.s.test</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </mode_s_test>
+      <game_s_free_first>
+        <type __type="str">consume</type>
+        <event __type="str">game.s.free.first</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </game_s_free_first>
+      <update_ready>
+        <type __type="str">consume</type>
+        <event __type="str">update.r</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </update_ready>
+      <update_downloaded>
+        <type __type="str">consume</type>
+        <event __type="str">update.d</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </update_downloaded>
+      <time_uptime>
+        <type __type="str">consume</type>
+        <event __type="str">time.up</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </time_uptime>
+      <time_playtime>
+        <type __type="str">consume</type>
+        <event __type="str">time.play</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </time_playtime>
+      <time_playtimepass>
+        <type __type="str">consume</type>
+        <event __type="str">time_playtimepass</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </time_playtimepass>
+      <kfc_rec_start>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.rec.s</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_rec_start>
+      <kfc_rec_upload>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.rec.u</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_rec_upload>
+      <kfc_game_s_light>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.game.s.light</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_game_s_light>
+      <kfc_game_s_standard>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.game.s.standard</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_game_s_standard>
+      <kfc_game_s_standard_plus>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.game.s.standard.plus</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_game_s_standard_plus>
+      <kfc_game_s_blaster>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.game.s.blaster</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_game_s_blaster>
+      <kfc_game_s_paradise>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.game.s.paradise</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_game_s_paradise>
+      <kfc_print_premium>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.print.premium</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_print_premium>
+      <kfc_mode_s_online>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.mode.s.online</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_mode_s_online>
+      <kfc_mode_s_local>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.mode.s.local</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_mode_s_local>
+      <kfc_mode_s_skill>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.mode.s.skill</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_mode_s_skill>
+      <kfc_print_o>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.print.o</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_print_o>
+      <kfc_print_o_change>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.print.o.change</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_print_o_change>
+      <kfc_print_o_test>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.print.o.test</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_print_o_test>
+      <kfc_print_o_reprint>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.print.o.re</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_print_o_reprint>
+      <kfc_print_error>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.print.e</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_print_error>
+      <kfc_print_card_1>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.print.card.1</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_print_card_1>
+      <kfc_print_card_2>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.print.card.2</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_print_card_2>
+      <kfc_print_card_3>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.print.card.3</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_print_card_3>
+      <kfc_print_card_4>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.print.card.4</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_print_card_4>
+      <kfc_print_card_5>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.print.card.5</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_print_card_5>
+      <kfc_game_s_premiumtime>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.game.s.premiumtime</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_game_s_premiumtime>
+      <kfc_game_s_megamixbattle>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.game.s.megamixbattle</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_game_s_megamixbattle>
+      <kfc_game_s_arena>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.game.s.arena</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_game_s_arena>
+      <kfc_valkyrie_generator>
+        <type __type="str">consume</type>
+        <event __type="str">KFC.valkyrie.generator</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/event</credit_ref>
+      </kfc_valkyrie_generator>
+      <pp_event01>
+        <type __type="str">consume</type>
+        <event __type="str">pp.KFCA.1gameplay</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event01>
+      <pp_event02>
+        <type __type="str">consume</type>
+        <event __type="str">pp.KFCA.play.standard</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event02>
+      <pp_event03>
+        <type __type="str">consume</type>
+        <event __type="str">pp.KFCA.play.blaster</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event03>
+      <pp_event04>
+        <type __type="str">consume</type>
+        <event __type="str">pp.KFCA.play.paradise</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event04>
+      <pp_event05>
+        <type __type="str">consume</type>
+        <event __type="str">pp.KFCA.print.premium</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event05>
+      <pp_event06>
+        <type __type="str">consume</type>
+        <event __type="str">pp.KFCA.play.premiumtime</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event06>
+      <pp_event07>
+        <type __type="str">consume</type>
+        <event __type="str">pp.KFCA.play.valkyrie.megamixbattle</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event07>
+      <pp_event08>
+        <type __type="str">consume</type>
+        <event __type="str">pp.KFCA.play.valkyrie.arena</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event08>
+      <pp_event09>
+        <type __type="str">consume</type>
+        <event __type="str">pp.KFCA.valkyrie.generator</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event09>
+      <pp_event10>
+        <type __type="str">consume</type>
+        <event __type="str">pp.KFCA.play.standard.plus</event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event10>
+      <pp_event11>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event11>
+      <pp_event12>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event12>
+      <pp_event13>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event13>
+      <pp_event14>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event14>
+      <pp_event15>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event15>
+      <pp_event16>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event16>
+      <pp_event17>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event17>
+      <pp_event18>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event18>
+      <pp_event19>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event19>
+      <pp_event20>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event20>
+      <pp_event21>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event21>
+      <pp_event22>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event22>
+      <pp_event23>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event23>
+      <pp_event24>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event24>
+      <pp_event25>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event25>
+      <pp_event26>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event26>
+      <pp_event27>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event27>
+      <pp_event28>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event28>
+      <pp_event29>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event29>
+      <pp_event30>
+        <type __type="str">consume</type>
+        <event __type="str"></event>
+        <player_ref __type="str">/coin/player1/ref_slotid</player_ref>
+        <credit_ref __type="str">/coin/pp_event</credit_ref>
+      </pp_event30>
+    </coin>
+    <eacoin>
+      <p1s01a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s.ec</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/start</price_ref>
+      </p1s01a1>
+      <p1s02a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.c.ec</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/continue</price_ref>
+      </p1s02a1>
+      <p1s03a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s.join.ec</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/join</price_ref>
+      </p1s03a1>
+      <p1s04a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s.ec</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item1</price_ref>
+      </p1s04a1>
+      <p1s05a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s.ec</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item2</price_ref>
+      </p1s05a1>
+      <p1s06a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s.ec</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item3</price_ref>
+      </p1s06a1>
+      <p1s07a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.04</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item4</price_ref>
+      </p1s07a1>
+      <p1s08a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.05</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item5</price_ref>
+      </p1s08a1>
+      <p1s09a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.06</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item6</price_ref>
+      </p1s09a1>
+      <p1s10a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.07</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item7</price_ref>
+      </p1s10a1>
+      <p1s11a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.08</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item8</price_ref>
+      </p1s11a1>
+      <p1s12a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.09</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item9</price_ref>
+      </p1s12a1>
+      <p1s13a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.10</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item10</price_ref>
+      </p1s13a1>
+      <p1s14a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.11</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item11</price_ref>
+      </p1s14a1>
+      <p1s15a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.12</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item12</price_ref>
+      </p1s15a1>
+      <p1s16a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.13</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item13</price_ref>
+      </p1s16a1>
+      <p1s17a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.14</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item14</price_ref>
+      </p1s17a1>
+      <p1s18a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s.ec</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item15</price_ref>
+      </p1s18a1>
+      <p1s19a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s.ec</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item16</price_ref>
+      </p1s19a1>
+      <p1s20a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.s.ec</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item17</price_ref>
+      </p1s20a1>
+      <p1s21a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.18</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item18</price_ref>
+      </p1s21a1>
+      <p1s22a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.19</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item19</price_ref>
+      </p1s22a1>
+      <p1s23a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.20</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item20</price_ref>
+      </p1s23a1>
+      <p1s24a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.21</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item21</price_ref>
+      </p1s24a1>
+      <p1s25a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.22</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item22</price_ref>
+      </p1s25a1>
+      <p1s26a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.23</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item23</price_ref>
+      </p1s26a1>
+      <p1s27a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.24</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item24</price_ref>
+      </p1s27a1>
+      <p1s28a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.25</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item25</price_ref>
+      </p1s28a1>
+      <p1s29a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.26</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item26</price_ref>
+      </p1s29a1>
+      <p1s30a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.27</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item27</price_ref>
+      </p1s30a1>
+      <p1s31a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.28</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item28</price_ref>
+      </p1s31a1>
+      <p1s32a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.29</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item29</price_ref>
+      </p1s32a1>
+      <p1s33a1>
+        <type __type="str">consume</type>
+        <event __type="str">game.i.30</event>
+        <player_ref __type="str">/eacoin/slot1/player</player_ref>
+        <price_ref __type="str">/eacoin/game/item30</price_ref>
+      </p1s33a1>
+    </eacoin>
+  </pos>
+</ea3>
