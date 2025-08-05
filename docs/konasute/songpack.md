@@ -13,5 +13,17 @@
     ![img](../img/konasute/mall-songpack-list.jpg)
     
     购买流程与订阅的流程是一致的，只要你的余额足够，选择对应的支付方式即可
+
+    你可以在下文的`楽曲パックに含まれる楽曲リストは`处点击旁边的超链接查看此曲包内包含的歌曲
     
     ![img](../img/konasute/mall-songpack-buy.jpg)
+
+    此处以信用卡支付为例，再最上方输入KONAMI ID的账户密码，勾选`上記内容に同意する`，点击`クレジットカードで`进入付款页面
+
+    ![img](../img/konasute/mall-songpack-buy-creditcard.jpg)
+
+    之后填写信息即可完成付款
+
+    ![img](../img/konasute/mall-songpack-buy-creditcard-2.jpg)
+
+    ![img](../img/konasute/mall-songpack-buy-creditcard-done.jpg)
