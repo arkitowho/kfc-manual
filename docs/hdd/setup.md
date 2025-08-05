@@ -34,6 +34,63 @@
 
     你可以选择保留，或者删除并在初次启动时重新矫正旋钮
 
+## 属性配置
+
+!!! info ""
+
+    进入`prop`文件夹，找到ea3-config.xml，在这个文件里你可以修改游戏的部分属性，女武神下通常保持`J:G:A:20XXXXXX0X`的格式就可以了
+
+    ```xml
+    <soft>
+        <model __type="str">KFC</model>
+        <dest __type="str">J</dest>
+        <spec __type="str">G</spec>
+        <rev __type="str">A</rev>
+        <ext __type="str">2025021200</ext>
+    </soft>
+    ```
+!!! info ""
+
+    ```xml
+        <dest __type="str">J</dest>
+    ```
+    此处填写游戏的地区，调整地区将同时调整游戏的语言与和谐项
+    
+    `J`表示日本
+    
+    `A`表示亚洲
+    
+    `U`表示美国
+    
+    `K`表示韩国
+    
+    `Y`表示印度尼西亚
+
+!!! info ""
+
+    ```xml
+        <spec __type="str">G</spec>
+    ```
+    此处填写框体的属性
+
+    `F`表示Nemsys老框体，仅60FPS
+
+    `G`表示Valkyrie女武神框体，可使用120FPS
+
+!!! info ""
+
+    ```xml
+        <rev __type="str">A</rev>
+    ```
+    此处填写游戏的修订号，一般不做修改
+
+!!! info ""
+
+    ```xml
+        <ext __type="str">2025021200</ext>
+    ```
+    此处填写游戏的版本号，现在的新版本是通过游戏dll与bootstrap.xml文件来鉴别游戏版本
+
 ## 安装Spice2x
 
 !!! info ""
@@ -301,7 +358,7 @@
 
 !!! info ""
 
-    不设定投币TEST会一直显示`500円を超える価格設定があります（设定价格总计超过500日元）`，解决方法也很简单
+    不设定投币可能TEST会一直显示`500円を超える価格設定があります（设定价格总计超过500日元）`，解决方法也很简单
 
     你只需要进入`COIN OPTIONS`
 
@@ -341,7 +398,7 @@
     
     ![img](../img/install/exit-esc.png)
 
-    - 按`F4`，在Spice顶栏找到`Power`，选择`Exit Game`
+    - 按`F4`，在Spice顶栏找到`Power`，选择`Exit Game`(新版本Spice已移除)
 
     ![img](../img/install/exit-power.png)
 
