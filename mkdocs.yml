@@ -67,7 +67,7 @@ nav:
       - 耳机孔配置: 'hdd/extras/enable-headphone-jack.md'
   - 家用版: 
     - 须知: 'konasute/qa.md'
-    - 账号注册与部署: 'konasute/setup.md'
+    - 账号注册与安装: 'konasute/setup.md'
     - 支付方式绑定（PASELI）: 'konasute/payment-paseli.md'
     - 支付方式绑定（信用卡）: 'konasute/payment-creditcard.md'
     - 订阅游戏: 'konasute/subscription.md'
